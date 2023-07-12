@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    margin: 50px 0 0 50px;
+}
+
+.categories,
+.goods,
+.goods-info {
+    border: 1px solid #000;
+}
+
+
+.categories__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.categories__list-item,
+.phones-list__item,
+.laptops-list__item,
+.pcs-list__item {
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(227, 189, 142);
+    cursor: pointer;
+}
+
+.categories__list-item:hover,
+.categories__list-item:active {
+    background-color: rgb(239, 214, 195);
+}
+
+.phones-list__item:hover,
+.phones-list__item:active {
+    background-color: rgb(239, 214, 195);
+}
+
+.laptops-list__item:hover,
+.laptops-list__item:active {
+    background-color: rgb(239, 214, 195);
+}
+
+.pcs-list__item:hover,
+.pcs-list__item:active {
+    background-color: rgb(239, 214, 195);
+}
+
+.goods {
+    display: flex;
+    flex-direction: column;
+}
+
+.phones-list,
+.laptops-list,
+.pcs-list {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.info {
+    border: 1px solid #000;
+    width: 250px;
+    height: 150px;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-buy {
+    margin: 10px;
+
+    width: calc(100% - 20px);
+    min-height: 35px;
+    
+    text-transform: uppercase;
+
+}
+
+.hide {
+    display: none;
+}
