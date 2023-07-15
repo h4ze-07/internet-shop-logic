@@ -61,6 +61,39 @@
     </div>
 
     
+    <div class="form-container hide">
+        <form class="form">
+            <label for="pib">ПІБ покупця:</label>
+            <input type="text" id="pib" name="pib" class="js-input">
+          
+            <label for="city">Місто:</label>
+            <select id="city" name="city" class="js-input">
+              <option value="">Оберіть місто</option>
+              <option value="Київ">Київ</option>
+              <option value="Львів">Львів</option>
+              <option value="Харків">Харків</option>
+            </select>
+          
+            <label for="postOffice">Склад Нової пошти для надсилання:</label>
+            <input type="text" id="postOffice" name="delivery" class="js-input">
+          
+            <label for="payment">Спосіб оплати:</label>
+            <select id="payment" name="payment" class="js-input">
+                <option value="">Оберіть спосіб оплати</option>
+                <option value="after delivery">Післяплата</option>
+                <option value="card">Оплата банківської картки</option>
+              </select>
+          
+            <label for="quantity">Кількість продукції, що купується:</label>
+            <input type="number" id="quantity" name="quantity" class="js-input">
+          
+            <label for="comment">Коментар до замовлення:</label>
+            <textarea id="comment" name="comment"></textarea>
+          
+            <button class="submit-btn">Підтвердити</button>
+          </form>
+          
+    </div>
 
     <script src="js/main.js"></script>
 </body>
