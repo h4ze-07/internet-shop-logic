@@ -9,43 +9,47 @@
 </head>
 <body>
     
+    <p class="orders">My Orders</p>
+
     <div class="container">
+
 
         <div class="categories">
             <ul class="categories__list">
-                <li class="categories__list-item">Phone`s</li>
-                <li class="categories__list-item">Laptop`s</li>
-                <li class="categories__list-item">PC`s</li>
+                <li class="categories__list-item">Phones</li>
+                <li class="categories__list-item">Laptops</li>
+                <li class="categories__list-item">PCs</li>
             </ul>
+            <div class="order-list hide"></div>
         </div>
 
 
         <div class="goods">
 
-            <div class="goods-phones">
+            <div class="goods-phones" id="phones">
                 <ul class="phones-list">
-                    <li class="phones-list__item">Phone 1</li>
-                    <li class="phones-list__item">Phone 2</li>
-                    <li class="phones-list__item">Phone 3</li>
-                    <li class="phones-list__item">Phone 4</li>
+                    <li class="phones-list__item"></li>
+                    <li class="phones-list__item"></li>
+                    <li class="phones-list__item"></li>
+                    <li class="phones-list__item"></li>
                 </ul>
             </div>
 
             <div class="goods-laptops">
                 <ul class="laptops-list">
-                    <li class="laptops-list__item">Laptop 1</li>
-                    <li class="laptops-list__item">Laptop 2</li>
-                    <li class="laptops-list__item">Laptop 3</li>
-                    <li class="laptops-list__item">Laptop 4</li>
+                    <li class="laptops-list__item"></li>
+                    <li class="laptops-list__item"></li>
+                    <li class="laptops-list__item"></li>
+                    <li class="laptops-list__item"></li>
                 </ul>
             </div>
 
             <div class="goods-pcs">
                 <ul class="pcs-list">
-                    <li class="pcs-list__item">PC 1</li>
-                    <li class="pcs-list__item">PC 2</li>
-                    <li class="pcs-list__item">PC 3</li>
-                    <li class="pcs-list__item">PC 4</li>
+                    <li class="pcs-list__item"></li>
+                    <li class="pcs-list__item"></li>
+                    <li class="pcs-list__item"></li>
+                    <li class="pcs-list__item"></li>
                 </ul>
             </div>
         </div>
@@ -85,14 +89,13 @@
               </select>
           
             <label for="quantity">Кількість продукції, що купується:</label>
-            <input type="number" id="quantity" name="quantity" class="js-input">
+            <input type="number" id="quantity" name="quantity" class="js-input" min="1">
           
             <label for="comment">Коментар до замовлення:</label>
             <textarea id="comment" name="comment"></textarea>
           
             <button class="submit-btn">Підтвердити</button>
           </form>
-          
     </div>
 
     <script src="js/main.js"></script>
